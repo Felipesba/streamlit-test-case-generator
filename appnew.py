@@ -16,10 +16,10 @@ def generate_test_cases(requirement):
       model="gpt-3.5-turbo",
      messages = [
         {"role": "system", "content": "You are a helpful system test assistant " + \
-        "capable of generating software test cases in the following format: " + \
-        "#Caso de Teste nome pular linha " + \
-        "Entrada: pular linha " + \
-        "Resultado Experado: pular linha"},
+        "capable of generating software test cases in the following format, each time that you see # put in a newline: " + \
+        "#Caso de Teste nome " + \
+        "#Entrada: " + \
+        "#Resultado Experado: "},
         {"role": "user", "content": requirement}
         ]
     )
