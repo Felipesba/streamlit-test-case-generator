@@ -15,7 +15,7 @@ def generate_test_cases(requirement):
     response = client.chat.completions.create(
       model="gpt-3.5-turbo",
       messages=[
-        {"role": "system", "content": "You are a helpful system test assistant capable of generating software test cases in the following format: #Test Case name, Input and expected Output."},
+        {"role": "system", "content": "You are a helpful system test assistant capable of generating software test cases in the following format in each line: #Test Case name; Input and expected Output."},
         {"role": "user", "content": requirement}
       ]
     )
