@@ -17,9 +17,9 @@ def generate_test_cases(requirement):
      messages = [
         {"role": "system", "content": "You are a helpful system test assistant " + \
         "capable of generating software test cases in the following format: " + \
-        "#Caso de Teste nome " + \
-        "Entrada: " + \
-        "Resultado Experado:"},
+        "#Caso de Teste nome pular linha " + \
+        "Entrada: pular linha " + \
+        "Resultado Experado: pular linha"},
         {"role": "user", "content": requirement}
         ]
     )
