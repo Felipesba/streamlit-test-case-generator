@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 
 # Retrieve the API key from the environment variable
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OpenAI.api_key = os.getenv('OPENAI_API_KEY')
 
 # Initialize the OpenAI client with the API key
 # openai.api_key = OPENAI_API_KEY
